@@ -198,3 +198,17 @@ obj = Demo()
 obj.show()
 
 
+# Abstraction -
+from abc import ABC , abstractmethod
+
+class Animal(ABC) :               # Abstract Class
+    def make_sound(self) :         # Abstract Method
+        pass
+
+class Cat(Animal) :
+    def make_sound(self) :
+        print("Cat says MEOWWWW!")
+
+class Dog(Animal) :
+    def make_sound(self) :
+        print("Dog says WOOFFF!")
