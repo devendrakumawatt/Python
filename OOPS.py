@@ -149,3 +149,34 @@ class Child(Parent) :
 
 obj = Child("Dev", 24, "Sikar")
 print(f"Name : {obj.name} , Age : {obj.age} , City : {obj.city}")
+
+
+# Polymorphism -
+
+# Method Overloading - [does not supported by python]
+class Animal :
+    def talk(self) :
+        print("Animal talking")
+
+    def talk(self, name) :
+        print(f"Animal of name {name} talking")
+
+res = Animal()
+# res.talk()    
+res.talk("Lion")
+
+# Method overriding -
+class Parent :
+    def speak(self) :
+        print("Parent speaking")
+
+class Child(Parent) :
+    def speak(self) :
+        print("Child speaking")
+
+obj1 = Parent()
+obj2 = Child()
+obj1.speak()
+obj2.speak()
+
+
