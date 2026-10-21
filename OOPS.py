@@ -212,3 +212,22 @@ class Cat(Animal) :
 class Dog(Animal) :
     def make_sound(self) :
         print("Dog says WOOFFF!")
+
+
+
+# Dunder Methods -
+class Demo :
+    def __init__(self,age) :
+        self.age = age
+        
+
+    def __str__(self) :
+        return f"This is str dunder method."
+
+    def __add__(self,other) :
+        return self.age + other.age
+
+obj = Demo(24)
+obj2 = Demo(25)
+print(obj)
+print(obj + obj2)
