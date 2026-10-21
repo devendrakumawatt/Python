@@ -180,3 +180,21 @@ obj1.speak()
 obj2.speak()
 
 
+# Encapsulation -
+class Demo :
+    def __init__(self) :
+        self.name = "Devendra"      #public
+        self._age = 24              #protected
+        self.__salary = 50000       #private
+
+    def show(self) :
+        print("Inside Class : ")
+        print(f"Public memeber : {self.name}")
+        print(f"Protected memeber : {self._age}")
+        print(f"Private memeber : {self.__salary}")
+
+
+obj = Demo()
+obj.show()
+
+
