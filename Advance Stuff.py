@@ -56,10 +56,22 @@ print(even_squares)
 
 
 
-# Lambda Function
+# Lambda Function in python -
 
 addition = lambda x,y : x + y
 print(addition(2,6))
 
 check = lambda x : "Even" if x % 2 == 0 else "Odd"
 print(check(4))
+
+
+# Map in Python -
+list1 = [1,2,3,4,5]
+evens = map(lambda x : x * 10, list1)
+print(list(evens))
+
+
+# Filter in python -
+list2 = [1,2,3,4,5,6,7,8,9]
+odds = filter(lambda x : x % 2 != 0, list2)
+print(list(odds))
