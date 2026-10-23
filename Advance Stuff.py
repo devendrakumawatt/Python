@@ -53,3 +53,13 @@ print(evens)
 # Set comphrenhension -
 even_squares = {x*x for x in range(10) if x % 2 == 0}
 print(even_squares)
+
+
+
+# Lambda Function
+
+addition = lambda x,y : x + y
+print(addition(2,6))
+
+check = lambda x : "Even" if x % 2 == 0 else "Odd"
+print(check(4))
