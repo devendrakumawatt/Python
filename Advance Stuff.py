@@ -41,3 +41,15 @@ def addition(*args, **kwargs) :
 addition(12,34,12, name = "dev", age = 24)
 
 
+# Comprhehensions in python -
+# list comphrehension -
+labels = ["Even" if x % 2 == 0 else "Odd" for x in range(5)]
+print(labels)
+
+# Dictionary comphrehension -
+evens = {x : x*x for x in range(10) if x % 2 == 0}
+print(evens)
+
+# Set comphrenhension -
+even_squares = {x*x for x in range(10) if x % 2 == 0}
+print(even_squares)
