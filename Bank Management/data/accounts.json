@@ -1,0 +1,11 @@
+[
+    {
+        "account_no": "3716086129",
+        "name": "Dev",
+        "age": 24,
+        "email": "dev@xyz.com",
+        "pin_salt": "74c478d90da83e22e570d4cc1b29ce0b",
+        "pin_hash": "4127e0a900f9c3eff879e85bbf8c10e7eef916ca3a3ccf4b6b6e717c74f0b2f4",
+        "balance": 100.0
+    }
+]
